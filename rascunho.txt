@@ -1,0 +1,58 @@
+//obtendo dados de entrada
+cout << “Esta é uma brincadeira de adivinhação e só funciona para quem tem até 99 anos.” << endl;
+cout << “Estamos em qual ano corrente (2018, 2019, ..., aaaa)?”
+cin >> anocorrente;
+
+//O ano corrente não é criticado, e, por isso, o participante deve ter atenção ao preenchê-lo.
+bool controle = true;
+int dif250;
+int resultado;
+
+do{
+cout << “Se você já fez aniversário este ano, digite 1; senão, digite 2: ” << endl;
+cin >> jafezaniversario;
+
+//processando as entradas
+if(jafezaniversario == 1) {
+	dif250 = anocorrente - 250
+	controle = false;
+} else if (jafezaniversario == 2) {
+	dif250 = anocorrente - 251
+	controle = false;
+} else { 
+	cout << “==> Você tem que responder 1 ou 2. <==” << endl;	
+}
+} while(controle);
+
+cout << “Chegou a hora de fazer umas continhas:” << endl;
+
+cout << "Pensar um número inteiro entre 1 e 9 e anotá-lo para não esquecer:” << endl;
+cout << "Multiplicar por 2 o número que foi pensado:” << endl;
+cout << "Somar 5 ao resultado encontrado:” << endl;
+cout << "Multiplicar por 50 esse novo resultado:” << endl;
+cout << "Somar " << dif250 << " a esse novo total encontrado." << endl;
+cout << "Subtrair o ano de seu nascimento desse novo resultado encontrado. " << endl;
+cout << endl;
+
+cout << "“Agora, informe o resultado que você encontrou: ” 
+cin >> resultado; 
+cout << endl;
+
+cout << “*** Vamos analisar o número ” << resultado << " que você encontrou ***”
+cout << endl;
+
+cout << “=> Muito provavelmente ele contém três algarismos” << endl;
+cout << “=> O algarismo da esquerda é o número que você pensou” << endl;
+cout << “=> Os dois outros informam sua idade” << endl;
+cout << endl;
+
+cout << “=> Acertei?” << endl;
+cout << endl;
+
+cout << “"*** Fim da brincadeira ***” << endl;
+
+Terminar o programa.
+
+
+
+
